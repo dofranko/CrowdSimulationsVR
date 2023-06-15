@@ -14,11 +14,11 @@ public class BoidsAgent : MonoBehaviour
 
     void Update()
     {
-        if (rb) rb.velocity /= 1.05f;
+        if (rb) rb.velocity /= 10f;
         if (isGoalReached)
             return;
 
-        if (Random.Range(0, 5) < 1)
+        if (Random.Range(0, 100) < 10)
         {
             ApplyRules();
         }

@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class OpenSpace : ScenarioBase
 {
-    public float pathLength = 100;
-    public float scatterRange = 10;
+    public float pathLength = 140;
+
     protected override void Start()
     {
         base.Start();
@@ -14,10 +14,10 @@ public class OpenSpace : ScenarioBase
         for (int i = 0; i < agents; i++)
         {
             int side = i % 2 == 0 ? 1 : -1;
-            Vector3 pos = new Vector3(side * pathLength / 2, 0, 0) + new Vector3(Random.Range(-scatterRange, scatterRange), 0, Random.Range(-scatterRange, scatterRange));
+            Vector3 pos = new Vector3(side * pathLength / 2, 0, 0) + new Vector3(Random.Range(-scatterRange.x, scatterRange.x), 0, Random.Range(-scatterRange.z, scatterRange.z));
             Vector3 antipodal = new(-side * pathLength / 2, 0, 0);
 
-            GameObject go = Instantiate(i % 2 == 0 ? prefab : prefabAlternative, Vector3.zero, Quaternion.LookRotation(antipodal));
+            GameObject go = Instantiate(i % 2 == 0 ? prefabBlue : prefabRed, Vector3.zero, Quaternion.LookRotation(antipodal));
 
             go.transform.parent = transform;
             go.transform.position = pos;
@@ -31,5 +31,6 @@ public class OpenSpace : ScenarioBase
 
             Simulator.Instance.addAgent(Rvo2Helper.ToRVOVector(go.transform.position));
         }
+
     }
 }

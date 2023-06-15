@@ -4,7 +4,31 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/ORCA/ORCASampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 0
+    path: Assets/Scenes/Boids/BoidsSampleScene.unity
+    guid: 49e57025c6b7ea54d9ef0b7891907d60
+  - enabled: 0
+    path: Assets/Scenes/Boids/BoidsSampleScene4.unity
+    guid: 2fd907a719df8b045915cae87b8fe4e7
+  - enabled: 0
+    path: Assets/Scenes/Boids/BoidsSampleScene2.unity
+    guid: 708655ef35934384ba1d0a9a332ebd97
+  - enabled: 0
+    path: Assets/Scenes/ORCA/ORCASampleScene2.unity
+    guid: 35f430987a5fb9443bfd890c19ebce41
+  - enabled: 0
+    path: Assets/Scenes/Boids/BoidsSampleScene3.unity
+    guid: 815041416fedd614a95bb69361208fe5
+  - enabled: 0
+    path: Assets/Scenes/ORCA/ORCASampleScene3.unity
+    guid: 510725532ada6c34688abc69ae3dcc7b
+  - enabled: 1
+    path: Assets/Scenes/ORCA/ORCASampleScene4.unity
+    guid: 09b30b5bac00ef044a7c3031b0bfe63f
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: c8cb10fe254f8894e84e0fd30c673b70, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: aa582e56c55bfc24b8215d1465f2f325, type: 2}

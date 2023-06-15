@@ -4,7 +4,7 @@
 QualitySettings:
   m_ObjectHideFlags: 0
   serializedVersion: 5
-  m_CurrentQuality: 1
+  m_CurrentQuality: 6
   m_QualitySettings:
   - serializedVersion: 2
     name: Very Low
@@ -236,9 +236,9 @@ QualitySettings:
     shadowmaskMode: 1
     skinWeights: 4
     textureQuality: 0
-    anisotropicTextures: 2
-    antiAliasing: 4
-    softParticles: 0
+    anisotropicTextures: 1
+    antiAliasing: 2
+    softParticles: 1
     softVegetation: 1
     realtimeReflectionProbes: 1
     billboardsFaceCameraPosition: 1
@@ -253,13 +253,13 @@ QualitySettings:
     streamingMipmapsMaxFileIORequests: 1024
     particleRaycastBudget: 4096
     asyncUploadTimeSlice: 2
-    asyncUploadBufferSize: 16
+    asyncUploadBufferSize: 4
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
     customRenderPipeline: {fileID: 0}
     excludedTargetPlatforms: []
   m_PerPlatformDefaultQuality:
-    Android: 2
+    Android: 6
     GameCoreScarlett: 5
     GameCoreXboxOne: 5
     Lumin: 5
@@ -269,8 +269,8 @@ QualitySettings:
     PS5: 5
     Server: 0
     Stadia: 5
-    Standalone: 5
-    WebGL: 6
+    Standalone: 6
+    WebGL: 2
     Windows Store Apps: 5
     XboxOne: 5
     iPhone: 2

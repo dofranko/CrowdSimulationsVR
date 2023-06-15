@@ -33,6 +33,5 @@ public class BoidsManager : MonoBehaviour
             allBoids[i] = Instantiate(boidPrefab, pos, Quaternion.identity);
             allBoids[i].GetComponent<BoidsAgent>().Initialize(this);
         }
-
     }
 }

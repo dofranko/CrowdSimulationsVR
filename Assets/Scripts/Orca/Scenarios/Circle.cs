@@ -18,7 +18,7 @@ public class Circle : ScenarioBase
             Vector3 pos = new Vector3((float)System.Math.Cos(angle), 0, (float)System.Math.Sin(angle)) * ringSize;
             Vector3 antipodal = -pos;
 
-            GameObject go = Instantiate(prefab, Vector3.zero, Quaternion.Euler(0, angle + 180, 0));
+            GameObject go = Instantiate(prefabBlue, Vector3.zero, Quaternion.Euler(0, angle + 180, 0));
 
             go.transform.parent = transform;
             go.transform.position = pos;
