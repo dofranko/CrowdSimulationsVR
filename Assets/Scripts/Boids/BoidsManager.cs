@@ -1,10 +1,11 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class BoidsManager : MonoBehaviour
 {
     public GameObject boidPrefab;
     public int numBoids = 20;
-    public GameObject[] allBoids;
+    public static List<GameObject> allBoids = new();
     public Vector3 spawnRangeLimits = new(5.0f, 5.0f, 5.0f);
     public GameObject goal;
     public Vector3 goalPos = Vector3.zero;
@@ -19,7 +20,7 @@ public class BoidsManager : MonoBehaviour
     void Start()
     {
         Random.InitState(2137);
-        allBoids = new GameObject[numBoids];
+        // allBoids = new GameObject[numBoids];
         goalPos = goal.transform.position;
 
         for (int i = 0; i < numBoids; ++i)
@@ -30,8 +31,9 @@ public class BoidsManager : MonoBehaviour
                 Random.Range(-spawnRangeLimits.y, spawnRangeLimits.y),
                 Random.Range(-spawnRangeLimits.z, spawnRangeLimits.z));
 
-            allBoids[i] = Instantiate(boidPrefab, pos, Quaternion.identity);
-            allBoids[i].GetComponent<BoidsAgent>().Initialize(this);
+            var boid = Instantiate(boidPrefab, pos, Quaternion.identity);
+            boid.GetComponent<BoidsAgent>().Initialize(this);
+            allBoids.Add(boid);
         }
     }
 }

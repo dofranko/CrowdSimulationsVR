@@ -11,6 +11,7 @@ public class Statistics : MonoBehaviour
     public string CustomText = "";
     int frameCount = 0;
     float dt = 0;
+    float gpuDt = 0;
     readonly List<float> measurements = new();
     readonly List<float> measurementsGpu = new();
     readonly float dtRate = 1.0f / 4.0f;
@@ -41,14 +42,19 @@ public class Statistics : MonoBehaviour
         //fps
         frameCount++;
         dt += Time.unscaledDeltaTime;
+#if ENABLE_VR && UNITY_2017_1_OR_NEWER
+        gpuDt += Unity.XR.Oculus.Stats.PerfMetrics.AppGPUTime;
+#endif
+
         if (dt > dtRate)
         {
             measurements.Add(frameCount / dt);
+#if ENABLE_VR && UNITY_2017_1_OR_NEWER
+            measurementsGpu.Add(gpuDt / frameCount);
+#endif
             frameCount = 0;
             dt -= dtRate;
-#if ENABLE_VR && UNITY_2017_1_OR_NEWER
-            //measurementsGpu.Add(Unity.XR.Oculus.Stats.PerfMetrics.AppGPUTime);
-#endif
+            gpuDt -= dtRate;
         }
     }
 

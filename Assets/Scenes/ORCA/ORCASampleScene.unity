@@ -461,7 +461,7 @@ MonoBehaviour:
   prefabRed: {fileID: 4465057261833117807, guid: 25e20b4969fa24f45840f180aae6fed8, type: 3}
   prefabGreen: {fileID: 4465057261833117807, guid: f1f3cc9b529ea4d4697618749ea1a05f, type: 3}
   prefabYellow: {fileID: 4465057261833117807, guid: 17e8b448d9ed44a4392ea24dc5bd9a1d, type: 3}
-  agents: 1000
+  agents: 0
   scatterRange: {x: 30, y: 0, z: 30}
   pathLength: 170
 --- !u!1001 &1997115615
@@ -521,7 +521,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7801283558712266816, guid: 99027187360a6cf4d8f4741590fa51e2, type: 3}
       propertyPath: CustomText
-      value: vr1orca1000
+      value: vr1orcaNoAgents0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99027187360a6cf4d8f4741590fa51e2, type: 3}

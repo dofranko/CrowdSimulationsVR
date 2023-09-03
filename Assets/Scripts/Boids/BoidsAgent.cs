@@ -38,7 +38,7 @@ public class BoidsAgent : MonoBehaviour
 
     private void ApplyRules()
     {
-        GameObject[] gos = bm.allBoids;
+        var gos = BoidsManager.allBoids;
         Vector3 vCentre = Vector3.zero;
         Vector3 vAvoid = Vector3.zero;
         float gSpeed = 0.1f;

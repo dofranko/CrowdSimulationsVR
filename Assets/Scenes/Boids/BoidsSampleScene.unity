@@ -168,7 +168,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 310679202376117690, guid: daa7d5c5e47f45b4ba5c675b05893f17, type: 3}
       propertyPath: spawnRangeLimits.x
-      value: 10
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 310679202376117690, guid: daa7d5c5e47f45b4ba5c675b05893f17, type: 3}
       propertyPath: spawnRangeLimits.y
@@ -176,7 +176,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 310679202376117690, guid: daa7d5c5e47f45b4ba5c675b05893f17, type: 3}
       propertyPath: spawnRangeLimits.z
-      value: 10
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 1336958113613031434, guid: daa7d5c5e47f45b4ba5c675b05893f17, type: 3}
       propertyPath: m_Name
@@ -759,7 +759,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 310679202376117690, guid: daa7d5c5e47f45b4ba5c675b05893f17, type: 3}
       propertyPath: spawnRangeLimits.x
-      value: 10
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 310679202376117690, guid: daa7d5c5e47f45b4ba5c675b05893f17, type: 3}
       propertyPath: spawnRangeLimits.y
@@ -767,7 +767,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 310679202376117690, guid: daa7d5c5e47f45b4ba5c675b05893f17, type: 3}
       propertyPath: spawnRangeLimits.z
-      value: 10
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 1336958113613031434, guid: daa7d5c5e47f45b4ba5c675b05893f17, type: 3}
       propertyPath: m_Name
@@ -876,7 +876,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7801283558712266816, guid: 99027187360a6cf4d8f4741590fa51e2, type: 3}
       propertyPath: CustomText
-      value: vr1boids1000
+      value: vr1baseNoBody1000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99027187360a6cf4d8f4741590fa51e2, type: 3}
